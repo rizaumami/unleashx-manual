@@ -5,6 +5,8 @@ abstract: This book is a manual for UnleashX, one of the most popular custom das
 subject: "UnleashX Manual"
 keywords: unleashx, dashboard, xbox, ogxbox
 date: 2023-01-04
+mainfont: Ubuntu
+monofont: Ubuntu Mono
 ---
 
 # Introduction
@@ -19,7 +21,7 @@ UnleashX has the basic feature of a dashboard. It can automatically search your 
 1) Auto search for games/application with thumbnail for display. Searches and indexes your hard drive for Xbox titles. Uses icon embedded within the xbe file or custom icon (Icon.png, Icon.jpg).
 2) File manager (Copy/Move/Delete/QuickDVDCopy/XBE Title editor, Support for copy and resume so you don't start from the beginning if an error occurs).
 3) Game/DVD movie/CD/Data detection with the option to autolaunch them using your favorite media player. Pressing any of the trigger buttons will suppress auto launching of disk.
-4) Image viewer (bmp, jpg, xbx and xpr -built in to the File manager).
+4) Image viewer (bmp, jpg, xbx and xpr) built in to the File manager.
 5) Zip/Unzip files right from your xbox. Supports extracting from Xbox Xip files (except xm files). Now you can check the contents of the xip files that came with the xbox without leaving it.
 6) Auto/Manual clock settings. You can set it to manual so UnleashX ask you for date and time when it becomes invalid (i.e., it has been unplug for too long). If set otherwise, UnleashX will set it Nov 15, 2003.
 7) Password protection for every item. With UnleashX, you can set a password for each menu, submenu, individual item, as well as a system password with maximum number of tries (only for system password. When the maximum is reached, the Xbox will automatically shutdown). The format menu has a default password of Xbox with a capital X.
@@ -30,20 +32,20 @@ UnleashX has the basic feature of a dashboard. It can automatically search your 
 12) Simple screen saver and Auto-Turn off timer.
 13) Sound effects (uses internal xbox files -- it will still run without them) and uses the soundtrack for background music. The combination for changing the music is **White** + **DpadLeft** = Next song, **White** + **DpadRight** = Previous song, **White** + **DpadDown** = Next soundtrack, **White** + **DpadUp** = Previous Soundtrack. And/or Music can also be controlled using the IR. Play, Pause, Stop, Forward (next song), Reverse (prev. song), Skip+(next Soundtrack), Skip -- (prev. soundtrack).
 14) In-box configuration, so you don't need to do everything from your PC.
-15) USB Keyboard and IR support (Pressing the Display on the IR for more than 1.5 seconds will turn the xbox off -though it's probably faster to just select the power-off menu item).
+15) USB Keyboard and IR support (Pressing the Display on the IR for more than 1.5 seconds will turn the xbox off -- though it's probably faster to just select the power-off menu item).
 16) Virtual Keyboard support for all settings.
 17) Support for Memory Unit thru File manager and FTP server. You can browse and copy/transfer files between your Xbox hard disk and memory unit.
 18) Partition Formatting.
-19) Screen Capture. And with the built in image viewer, you can now view it too (though what's the point?). Key combo -- Left Thumbstick press + Black Button. Look for the images in `Z:\` (or `Y:\`, if Z happens to be full, then `X:\` if Y happens to be full or not available).
-20) Extensive support for skinning. You can switch skin without restarting. Now supports preview and you don't have to unpack your skin files anymore. Just zip them up, and upload to your Skins folder (each zip file must be on its own subfolder and all files must be in the root of the zip file -meaning select the files when zipping and not the folder containing the files).
+19) Screen Capture. And with the built in image viewer, you can now view it too (though what's the point?). Key combo -- **Left Thumbstick** press + **Black** Button. Look for the images in `Z:\` (or `Y:\`, if Z happens to be full, then `X:\` if Y happens to be full or not available).
+20) Extensive support for skinning. You can switch skin without restarting. Now supports preview and you don't have to unpack your skin files anymore. Just zip them up, and upload to your Skins folder (each zip file must be on its own subfolder and all files must be in the root of the zip file -- meaning select the files when zipping and not the folder containing the files).
 21) RSS News feed support. To cycle news items press (**Black** + **DPad Right**).
 22) Supports batch command.
 23) Support for partition G.
 24) To keep the footprint small, UnleashX uses a lot of files that are already in your HD like the sound effects file and xbx files. If you have a hacked MS dash, you'll probably notice this as long as you didn't rename them to something else.
 25) Unrar (works with V2.0 Rar only -Winrar 2.9). Rar 3.0 can be displayed but can't be extracted.
-26) Video Support (WMV8 and XMV only). You can now watch that WMV/XMV cut scenes without playing the game. Just select your movies from the file manager and watch. **Right Thumbstick** (press) toggles between windowed and fullscreen view. See skinning overview to learn how to use video on your skins. For an automatic preview video detection, name your video "preview.xmv" or "preview.wmv" and drop them in the game folder. Preview videos con be found at [http://www.gametrailers.com/](http://www.gametrailers.com/) as well as `#mxmfiles` on EFNet.
+26) Video Support (WMV8 and XMV only). You can now watch that WMV/XMV cut scenes without playing the game. Just select your movies from the file manager and watch. **Right Thumbstick** (press) toggles between windowed and fullscreen view. See skinning overview to learn how to use video on your skins. For an automatic preview video detection, name your video "`preview.xmv`" or "`preview.wmv`" and drop them in the game folder. Preview videos con be found at [http://www.gametrailers.com/](http://www.gametrailers.com/) as well as `#mxmfiles` on EFNet.
 27) Custom music path. If you have WMA's on your xbox aside from those ripped using MS Dash, you can tell UnleashX where to look for them. It will search the path you pointed and one folder down, if any.
-28) Skin preview. Provide a screenshot and save it as "preview.jpg" to enable skin preview. It's off by default. Press the **White** button to toggle preview mode. You can also preview the skin live and restore the settings on next bootup. When in the Skin Selection screen, press the **Back** button. This should tell UnleashX to use the selected skin until the next reboot. To use the selected skin all the time, press **A** for the second time, or **B** or **Black** buttons.
+28) Skin preview. Provide a screenshot and save it as "`preview.jpg`" to enable skin preview. It's off by default. Press the **White** button to toggle preview mode. You can also preview the skin live and restore the settings on next bootup. When in the Skin Selection screen, press the **Back** button. This should tell UnleashX to use the selected skin until the next reboot. To use the selected skin all the time, press **A** for the second time, or **B** or **Black** buttons.
 29) Skin files need not be expanded any more. Zip up your files, upload in its own folder, and select it.
 30) Safe mode. Some skins crashed UnleashX? Just reboot your xbox and select another one without using a boot disk. UnleashX should bypass it on the next reboot. Same goes true for `config.xml`.
 31) Capability to format new Harddisk and restore backup when run from CD-R/RW or DVD. See `hdprepare_movie.txt` for details. Thanks to Modchip­Source ([www.modchipsource.com](www.modchipsource.com)) for providing the HD used for testing.
@@ -66,7 +68,7 @@ At the moment, there's not much feature but I plan to keep an adding more as I g
 
 ## Installation Instructions
 
-If you are to use this application for the first time, I suggest you use it as an application first before using it as a full time default dashboard, just so you get used to it. FTP the default.xbe, along with the config.xml (optional) to your hard drive, or make an xISO image file and burn it to a media (CD-R/W, DVD±R/W) that your drive can read. Then point your evox/mxm/ava/MS h4xx0r3d dash/nexGen to it and use it for a while (usually in `E:\` or `F:\` under `Apps\UnleashX\default.xbe`). Before FTP'ing it in, go ahead and open the config.xml and edit it to your liking. (i.e. IP address, fan speed). Note that everything can be configured straight from inside this dash. Then when you're comfortable, rename your stock dash to something else and stick in the default.xbe and config.xml in your C: drive and rename it to what your old dash use to be named. Most common name for a replacement dashboard is `evoxdash.xbe` but it seemed BIOS maker changed the rule, so read the docs that came with your favorite BIOS provider.
+If you are to use this application for the first time, I suggest you use it as an application first before using it as a full time default dashboard, just so you get used to it. FTP the `default.xbe`, along with the `config.xml` (optional) to your hard drive, or make an xISO image file and burn it to a media (CD-R/W, DVD±R/W) that your drive can read. Then point your evox/mxm/ava/MS h4xx0r3d dash/nexGen to it and use it for a while (usually in `E:\` or `F:\` under `Apps\UnleashX\default.xbe`). Before FTP'ing it in, go ahead and open the `config.xml` and edit it to your liking. (i.e. IP address, fan speed). Note that everything can be configured straight from inside this dash. Then when you're comfortable, rename your stock dash to something else and stick in the `default.xbe` and `config.xml` in your `C:` drive and rename it to what your old dash use to be named. Most common name for a replacement dashboard is `evoxdash.xbe` but it seemed BIOS maker changed the rule, so read the docs that came with your favorite BIOS provider.
 
 # Config File explained
 
@@ -333,7 +335,7 @@ The following are internal functions currently supported by UnleashX:
   <item Action="Copy" Arg1="D:\CDrive" Arg2="C:\">Copy C Backup</Item>
   ```
 - `CopyDVD` \
-  ­Copies Game disk into one of the following folders: \
+  ­Copies Game disk into one of the following folders:
   - E:\Games\<GameTitle>
   - F:\Games\<GameTitle> or
   - G:\Games\<GameTitle>.
@@ -353,16 +355,16 @@ The following are internal functions currently supported by UnleashX:
   Example:
   ```xml
   <item Action="Delete" Arg1="C:\Items.xml">Delete Cache</Item>
-  <Item Action="C:\Skins"">Delete Skins folder</Item>
+  <Item Action="C:\Skins">Delete Skins folder</Item>
   ```
 - `Zip` \
-  ­Zip a single file or a directory. Format is `Command ­Source file/folder­destination file`. \
+  ­Zip a single file or a directory. Format is `<Command> <­Source file/folder> <­destination file>`. \
   Example:
   ```xml
   <item Action="Zip" Arg1="C:\Skins" Arg2="C:\Skins.zip">Zip up Skins folder</Item>
   ```
 - `Unzip` \
-  ­Expands a zip file. Format is `Command­ Source zip file­destination folder`. \
+  ­Expands a zip file. Format is `<Command­> <Source zip file> <­destination folder>`. \
   Example:
   ```xml
   <item Action="UnZip" Arg1="C:\skins.zip" Arg2="C:\Skins">Extract Skins</Item>
@@ -535,7 +537,7 @@ Skin selection screen. If you have a screenshot of your skin, name it `Preview.j
 
 The File Manager screen. Use the **Left Trigger** to select the left pane, **Right Trigger** to select the right. In operations where it requires a source and a destination, the active pane is the source while the other is the destination. Press the **Start** or **White** button to bring the options up.
 Pressing the **Right Thumbstick** will toggle between a split­screen or full view mode.
-The **Black** button will invert the selection. Higlight an item and press the **A** button to bring up the function associated with it (bmp, jpg, xpr, xbx -> ImageViewer, zip/xip, as well as rar files are also supported. XMV/WMV -Video Player, txt, xml, ini -> Text Editor).
+The **Black** button will invert the selection. Higlight an item and press the **A** button to bring up the function associated with it (bmp, jpg, xpr, xbx -> ImageViewer, zip/xip, as well as rar files are also supported. XMV/WMV -- Video Player, txt, xml, ini -> Text Editor).
 
 ![Zip archiving.](imgs/zipping.jpg)
 
@@ -547,7 +549,7 @@ And here's the Zip Manager showing the content of the zip file. On the right han
 
 ![Image viewer.](imgs/img_view.jpg)
 
-Here's the Image viewer showing a file captured by the Xbox. To do a screen capture, press the LeftTrigger+Black button. The actual size is 640x480 but for some reason, the texture description says 1024x512. Press the right thumbstick to display the image in its actual size.
+Here's the Image viewer showing a file captured by the Xbox. To do a screen capture, press the **LeftTrigger** + **Black** button. The actual size is 640x480 but smaller in preview. Press the right thumbstick to display the image in its actual size.
 
 ![Text editor.](imgs/txt_ed.jpg)
 
@@ -555,19 +557,19 @@ Here's the text editor. To open an existing document, find and select any `.txt`
 
 | Key | Basic commands
 |-----|---------------
-| Back                  | ­closes the text editor.
-| B                     | ­deletes a character after the cursor.
-| X                     | ­deletes a character before the cursor.
-| Y                     | ­insert new line.
-| Black                 | ­Adds a Tab character.
+| Back                  | closes the text editor.
+| B                     | deletes a character after the cursor.
+| X                     | deletes a character before the cursor.
+| Y                     | insert new line.
+| Black                 | Adds a Tab character.
 | White                 | Toggles the virtual keyboard.
 | LeftTrigger/DpadUp    | Moves the cursor up.
-| RightTrigger/DpadDown | ­Moves the cursor down.
-| Dpad Left ­            | Moves the cursor to the left.
-| Dpad Right ­           | Moves the cursor to the right.
+| RightTrigger/DpadDown | Moves the cursor down.
+| Dpad Left             | Moves the cursor to the left.
+| Dpad Right            | Moves the cursor to the right.
 | RightThumbpress       | Forces all input to be channeled to virtual keyboard On normal operation, the virtual keyboard will only respond to left thumbstick for navigation and the "A" button for character selection, pressing the right thumbstick forces the keyboard to recognize all inputs, and the text editor to ignore them.
 
-An USB keyboard is also supported by the Text Editor. Normal ASCII characters will behave as they should while Enter and Esc key will behave differently. Esc will be mapped to **B** button on the gamepad, while Ctrl+Esc will be mapped to **Back** button. Enter will be mapped to **A** while Ctrl+Enter will be mapped to **Start** button.
+A USB keyboard is also supported by the Text Editor. Normal ASCII characters will behave as they should while Enter and Esc key will behave differently. Esc will be mapped to **B** button on the gamepad, while Ctrl+Esc will be mapped to **Back** button. Enter will be mapped to **A** while Ctrl+Enter will be mapped to **Start** button.
 
 ![Date and time settings.](imgs/date.jpg)
 
@@ -650,13 +652,20 @@ Well, what better way to start this than giving out a sample xml file, right? He
       relatively far from each other, it may be best to turn off the "Smooth" attribute. You can have as many item
       position as the number of available menu. These are the exact coordinates I used for the default skin. -->
       <ItemPos Left="285" Top="96"></ItemPos>
-      <ItemPos Left="310" Top="138">
-      </ItemPos><ItemPos Left="315" Top="180">
-      </ItemPos><ItemPos Left="310" Top="222">
-      </ItemPos><ItemPos Left="290" Top="264"></ItemPos>
+      <ItemPos Left="310" Top="138"></ItemPos>
+      <ItemPos Left="315" Top="180"></ItemPos>
+      <ItemPos Left="310" Top="222"></ItemPos>
+      <ItemPos Left="290" Top="264"></ItemPos>
       <!-- Tells the skinning engine you want a custom font for the menu.
       Custom fonts can be made with a program called FontBundle which can be found at xbins
-      /XBOX/apps/dashboards/mediaxmenu/_accessories/FontBundle.rar -->
+      /XBOX/apps/dashboards/mediaxmenu/_accessories/FontBundle.rar.
+      To use and call fonts many times, variables can be used:
+      <Fonts>
+        <Font Name="font1">E:\Fonts\font1.xpr</Font>
+        <Font Name="font2">E:\Fonts\font2.xpr</Font>
+        <Font Name="font3">E:\Fonts\font3.xpr</Font>
+      </Fonts>
+      Call the font as font1, font2 or font3. -->
       <Font>Arial12.xpr</Font>
       <!-- Position is where the menu should be displayed. Please don't indicate too small an area for the menu,
       if you do, the text will look like this (i.e. Dash...., File....., Sett.....).
@@ -688,9 +697,9 @@ Well, what better way to start this than giving out a sample xml file, right? He
     <Text Left="605" Top="30" Align="Right" Color="0xFFFFFFFF" Source="My Custom Text"></Text>
     <!-- You can also draw shapes (Rectangle, RoundedBox (rectangle with rounded corners, and triangle.
     For triangles, add the 'Direction' attribute with the following valid values, Up, Left, Right, and Down. -->
-    <Shape Type="RoundedBox" Left="132" Top="348" Width="438" Height="34" BorderColor="0xFFFFFFFF" BackColor="0xFF0000FF" />
-    <!-- Lastly, images. You can pepper the screen with images and here's the format -->
-      <Image Left="132" Top="348" Width="438" Height="34" Opacity="90">Overlay.png
+    <Shape Type="RoundedBox" Left="132" Top="348" Width="438" Height="34" BorderColor="0xFFFFFFFF" BackColor="0xFF0000FF">
+      <!-- Lastly, images. You can pepper the screen with images and here's the format -->
+      <Image Left="132" Top="348" Width="438" Height="34" Opacity="90">Overlay.png</Image>
     </Shape>
     <!-- Some people requires overlaying an image one on top of the other and game Icons are no exception.
     For this reason, Game Icons now uses the Image tag, rather than the GameIcon Tag. -->
@@ -711,47 +720,72 @@ Well, what better way to start this than giving out a sample xml file, right? He
   viewed from a TV monitor. Anyway, I'm still to changes and if anyone can come up with a great color combination,
   I'll be glad to make that as the default. ColorPicker is a good program to aid in selecting colors. -->
   <ColorScheme>
-    <!-- Fog, sky(background), and cell color -->
-    <AMBIENT_FOGCOLOR>0xFF002000</AMBIENT_FOGCOLOR>
-    <AMBIENT_SKYCOLOR>0xFF004000</AMBIENT_SKYCOLOR>
-    <AMBIENT_CELLCOLOR>0x0600C000</AMBIENT_CELLCOLOR>
-    <!-- Dialog screen colors. Dialogs are composed of caption, an outer and inner border and the text and
-    buttons -->
-    <CAPTION_TEXTCOLOR>0xFFFFFFC0</CAPTION_TEXTCOLOR>
-    <CAPTION_BACKCOLOR>0xFF686485</CAPTION_BACKCOLOR>
-    <DIALOG_BORDERCOLOR>0xFF0C0A18</DIALOG_BORDERCOLOR>
-    <DIALOG_BACKCOLOR>0xCD636482</DIALOG_BACKCOLOR>
-    <DIALOG_INNER_BORDERCOLOR>0xFF636482</DIALOG_INNER_BORDERCOLOR>
-    <DIALOG_INNER_BACKCOLOR>0xE1004100</DIALOG_INNER_BACKCOLOR>
+    <!-- Music menu playlist screen -->
+    <MMActiveForeColor>0xBFFFFFFF</MMActiveForeColor>
+    <MMForeColor>0xBFFFFFFF</MMForeColor>
+    <MMDarkBackColor>0xFF052500</MMDarkBackColor>
+    <MMLightBackColor>0xFF052500</MMLightBackColor>
+    <MM_BORDERCOLOR>0x7FFFFFFF</MM_BORDERCOLOR>
+    <!-- Visualisation colour -->
+    <MMDarkBarColor>0x7FFFFFFF</MMDarkBarColor>
+    <!-- Spectrum bar -->
+    <MMBarBackColor>0x7FFFFFFF</MMBarBackColor>
+    <MMOffForeColor>0x7FFFFFFF</MMOffForeColor>
+    <MMLightBarColor>0x7FFFFFFF</MMLightBarColor>
+    <!-- Text editor window -->
+    <WINDOWBACKCOLOR>0xFFFFFFFF</WINDOWBACKCOLOR>
+    <WINDOWFORECOLOR>0xFF000000</WINDOWFORECOLOR>
+    <!-- Fog, sky (background), and cell colours -->
+    <AMBIENT_FOGCOLOR>0xFF052500</AMBIENT_FOGCOLOR>
+    <AMBIENT_SKYCOLOR>0xFF008000</AMBIENT_SKYCOLOR>
+    <AMBIENT_CELLCOLOR>0x061A920A</AMBIENT_CELLCOLOR>
+    <!-- Please wait overlay, menu header colour eg... -->
+    <CAPTION_TEXTCOLOR>0xFFFFFF00</CAPTION_TEXTCOLOR>
+    <CAPTION_BACKCOLOR>0xFF28590F</CAPTION_BACKCOLOR>
+    <!-- Dialogs, ie, Batch process and progress bars eg... -->
+    <DIALOG_BORDERCOLOR>0xFF008000</DIALOG_BORDERCOLOR>
+    <DIALOG_BACKCOLOR>0xFF052500</DIALOG_BACKCOLOR>
+    <DIALOG_INNER_BORDERCOLOR>0xFFFFE2B4</DIALOG_INNER_BORDERCOLOR>
+    <DIALOG_INNER_BACKCOLOR>0xE1072700</DIALOG_INNER_BACKCOLOR>
     <DIALOG_TEXTCOLOR>0xFFFFFFFF</DIALOG_TEXTCOLOR>
-    <DIALOG_DISABLEDTEXT>0x7F086820</DIALOG_DISABLEDTEXT>
-    <OPTION_TEXTCOLOR>0xFF02C90C</OPTION_TEXTCOLOR>
-    <OPTION_ACTIVETEXTCOLOR>0xFFFFFFFF</OPTION_ACTIVETEXTCOLOR>
-    <OPTION_ACTIVEBACKCOLOR>0xFF02C90C</OPTION_ACTIVEBACKCOLOR>
-    <BUTTON_BORDERCOLOR>0xFF0C0A18</BUTTON_BORDERCOLOR>
-    <BUTTON_TEXTCOLOR>0xFF02C90C</BUTTON_TEXTCOLOR>
-    <BUTTON_BACKCOLOR>0xCD636482</BUTTON_BACKCOLOR>
+    <DIALOG_DISABLEDTEXT>0x55FFFFFF</DIALOG_DISABLEDTEXT>
+    <!-- Settings menu -->
+    <OPTION_TEXTCOLOR>0xFFFFFFFF</OPTION_TEXTCOLOR>
+    <OPTION_ACTIVETEXTCOLOR>0xFFFFFF00</OPTION_ACTIVETEXTCOLOR>
+    <OPTION_ACTIVEBACKCOLOR>0xFF008000</OPTION_ACTIVEBACKCOLOR>
+    <!-- Dialog screen colors (i.e. Yes/No buttons).
+    Dialogs are composed of caption, an outer and inner border and the text and buttons -->
+    <BUTTON_BORDERCOLOR>0xFF008000</BUTTON_BORDERCOLOR>
+    <BUTTON_TEXTCOLOR>0xFF77AB99</BUTTON_TEXTCOLOR>
+    <BUTTON_BACKCOLOR>0xFF052500</BUTTON_BACKCOLOR>
     <BUTTON_ACTIVETEXTCOLOR>0xFFFFFFFF</BUTTON_ACTIVETEXTCOLOR>
-    <BUTTON_ACTIVEBACKCOLOR>0xE102C90C</BUTTON_ACTIVEBACKCOLOR>
-­
-    <!-- Keyboard color settings -->
+    <BUTTON_ACTIVEBACKCOLOR>0xFF73AA10</BUTTON_ACTIVEBACKCOLOR>
+    <!-- Keyboard -->
+    <!-- Button background -->
     <KB_KEYBG_HIGHLIGHT>0xCC00C000</KB_KEYBG_HIGHLIGHT>
-    <KB_KEYBG_DISABLED>0xffc0c0c0</KB_KEYBG_DISABLED>
-    <KB_KEY_PRESSED>0xff808080</KB_KEY_PRESSED>
-    <KB_KEY_NORMAL>0xff000000</KB_KEY_NORMAL>
-    <KB_KEY_DISABLED>0xff808080</KB_KEY_DISABLED>
-    <KB_KEY_ACTIVEBORDER>0xff008000</KB_KEY_ACTIVEBORDER>
-    <KB_KEY_TEXTCOLOR>0xff000000</KB_KEY_TEXTCOLOR>
-    <KB_KEY_TEXTBACKCOLOR>0xffFFFFFF</KB_KEY_TEXTBACKCOLOR>
-    <KB_KEY_TEXTBORDERCOLOR>0xff0000FF</KB_KEY_TEXTBORDERCOLOR>
-­
-    <!-- The main Menu color settings. For an EvolutionX like appearance, set the color for the active item. -->
-    <MENU_TEXTCOLOR>0x99FFFFFF</MENU_TEXTCOLOR>
-    <MENU_ACTIVETEXTCOLOR>0xFF40FF40</MENU_ACTIVETEXTCOLOR>
-    <MENU_BORDERCOLOR>0x00000000</MENU_BORDERCOLOR>
-    <MENU_BACKCOLOR>0x00000000</MENU_BACKCOLOR>
-    <MENU_ACTIVEBACKCOLOR>0xFF004000</MENU_ACTIVEBACKCOLOR>
-    <MENU_ACTIVEBORDERCOLOR>0xFF686485</MENU_ACTIVEBORDERCOLOR>
+    <KB_KEYBG_DISABLED>0xFFC0C0C0</KB_KEYBG_DISABLED>
+    <!-- Disabled button -->
+    <KB_KEY_PRESSED>0xFF808080</KB_KEY_PRESSED>
+    <!-- Letters -->
+    <KB_KEY_NORMAL>0xFF000000</KB_KEY_NORMAL>
+    <!-- Can see me to see where this is -->
+    <KB_KEY_DISABLED>0xFF808080</KB_KEY_DISABLED>
+    <!-- Selected border -->
+    <KB_KEY_ACTIVEBORDER>0xFFFFFF00</KB_KEY_ACTIVEBORDER>
+    <!-- Text area text -->
+    <KB_KEY_TEXTCOLOR>0xFF000000</KB_KEY_TEXTCOLOR>
+    <!-- Text area -->
+    <KB_KEY_TEXTBACKCOLOR>0xFFFFFFFF</KB_KEY_TEXTBACKCOLOR>
+    <!-- Text area border -->
+    <KB_KEY_TEXTBORDERCOLOR>0xFFFFFF00</KB_KEY_TEXTBORDERCOLOR>
+    <!-- Main menu.
+    For an EvolutionX like appearance, set the color for the active item. -->
+    <MENU_TEXTCOLOR>0xFF73AA10</MENU_TEXTCOLOR>
+    <MENU_ACTIVETEXTCOLOR>0xFFFFFFFF</MENU_ACTIVETEXTCOLOR>
+    <MENU_BORDERCOLOR>0xFFFFFFFF</MENU_BORDERCOLOR>
+    <MENU_BACKCOLOR>0xFFFFFFFF</MENU_BACKCOLOR>
+    <MENU_ACTIVEBACKCOLOR>0x00000000</MENU_ACTIVEBACKCOLOR>
+    <MENU_ACTIVEBORDERCOLOR>0x00000000</MENU_ACTIVEBORDERCOLOR>
   </ColorScheme>
 </Skin>
 ```
@@ -831,9 +865,9 @@ For more information or if you just want to throw in your $.02 head out to cyber
 
 There are a lot of people I should be thankful about. Most of them I really don't know personally but they've been very helpful to the xbox community. I wanted to give a very generic "Thank you" without naming names but I guess that's even ruder than not saying thanks to specific people or group of people at all. So here it goes and to the ones not mentioned here, I beg your pardon, but thank you as well.
 
-First, to Team Assembly. I don't know a single person from your group, but your Dual Debug BIOS and AnyDash plugin is superb. Your XKUtils code is great too. I couldn't imagine developing without it. Simply fantastic. Team Complex(?), of course, I'd be stuck with something else if not for their release of …,you know what.
-Xbins people for a great resource site. Xantium and HSDEMONS for their exceptional xbox­scene site. Xbox­Linux team for a wonderful resource. Team Evolutionx for a great dashboard. Especial thanks goes to Iriez for helping me out (he even became the very first alpha tester, hehe). To all great names out there, Team Xecuter, Caustic, BenJeremy, Cherry, Lantus, Dextrose, Team AVA, Xport, T'ulkas, Voltaic, ProjectX, numbnut , Team XDash­OS… And to the people who made skins for UnleashX on the first day. You guys are really great, keep rocking.
-Okay so I'll name names ;): hydraulix, koldfuzion, XceL, snk and so on. To all homebrew programmers and to all whose name I, either don't know or forgot but who has been a great deal of help to the entire scene - a big THANK YOU to you all.
+First, to Team Assembly. I don't know a single person from your group, but your Dual Debug BIOS and AnyDash plugin is superb. Your XKUtils code is great too. I couldn't imagine developing without it. Simply fantastic. Team Complex(?), of course, I'd be stuck with something else if not for their release of ..., you know what.
+Xbins people for a great resource site. Xantium and HSDEMONS for their exceptional xbox­scene site. Xbox­Linux team for a wonderful resource. Team Evolutionx for a great dashboard. Especial thanks goes to Iriez for helping me out (he even became the very first alpha tester, hehe). To all great names out there, Team Xecuter, Caustic, BenJeremy, Cherry, Lantus, Dextrose, Team AVA, Xport, T'ulkas, Voltaic, ProjectX, numbnut , Team XDash­OS.... And to the people who made skins for UnleashX on the first day. You guys are really great, keep rocking.
+Okay so I'll name names ;): hydraulix, koldfuzion, XceL, snk and so on. To all homebrew programmers and to all whose name I, either don't know or forgot but who has been a great deal of help to the entire scene -- a big THANK YOU to you all.
 
 Special thanks go to the beta testers. Your inputs are very much appreciated and helped me a lot. Keep up the good work, guys. Thanks to tweaqr for updating/maintaining this document and CaliSurfer for hosting beta builds. Also to Dunny, for making the great "Console UI" skin, and yourwishismine for modifying it.
 

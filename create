@@ -81,7 +81,7 @@ case $1 in
   pdf)
     # https://jdhao.github.io/2019/05/30/markdown2pdf_pandoc/
     pandoc  --pdf-engine=xelatex \
-            --highlight-style zenburn \
+            --highlight-style haddock \
             -f markdown-raw_tex \
             --toc \
             -N \

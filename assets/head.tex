@@ -11,7 +11,9 @@
 \usepackage{hyperref}
 
 % Smaller code font size: https://stackoverflow.com/a/27159300
-\renewenvironment{Shaded} {\begin{snugshade}\footnotesize} {\end{snugshade}}
+%\renewenvironment{Shaded} {\begin{snugshade}\footnotesize} {\end{snugshade}}
+% Syntax highlighter without background color wont work with above snugshade.
+\renewenvironment{Shaded}{\footnotesize}{}
 
 % Keep image order: https://stackoverflow.com/a/58840456
 \usepackage{float}
@@ -24,7 +26,7 @@
 }
 
 % begin a new page for each section (first level header),
-% we need to combine this with `-V subparagraph` when invoking pandc
+% we need to combine this with `-V subparagraph` when invoking pandoc
 \usepackage{titlesec}
 \newcommand{\sectionbreak}{\clearpage}
 

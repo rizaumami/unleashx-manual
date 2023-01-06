@@ -30,6 +30,33 @@ As for now the focus is on PDF, but I think the EPUB generated is quite readable
   ./create epub
   ```
 
+### How to
+
+- Change fonts
+  Add font's name to [UnleashX.md](UnleashX.md?plain=1#L1) metadata. \
+  Example:
+
+  ```md
+  mainfont: DejaVuSerif
+  sansfont: DejaVuSans
+  monofont: DejaVuSansMono
+  mathfont: TeXGyreDejaVuMath-Regular
+  ```
+
+- Change syntax highlighting
+  Change highlight style in [create](create#L84) with following styles:
+  ```sh
+  $ pandoc --list-highlight-styles
+  pygments
+  tango
+  espresso
+  zenburn
+  kate
+  monochrome
+  breezedark
+  haddock
+  ```
+
 ### License
 
 License for this repository is as stated in [LICENSE](LICENSE) file, except the source folder contents.
